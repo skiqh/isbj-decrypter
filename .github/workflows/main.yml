@@ -28,18 +28,13 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up Node
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - run: npm install -g corepack@0.20.0 --force
+      - run: corepack enable
+      - uses: actions/setup-node@v4
         with:
-          node-version: lts/*
-          cache: 'yarn'
-
-      - name: Enable Corepack to respect packageManager field
-        run: corepack enable
-
+          node-version: ${{ matrix.node-version }}
+          cache: yarn
       - name: Install dependencies
         run: yarn install --immutable
 
