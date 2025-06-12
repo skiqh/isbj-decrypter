@@ -11,7 +11,7 @@ Entschlüsselt ISBJ-Abrechnungen im Browser.
 **Eure Daten verlassen nie den Browser.**  
 Die Entschlüsselung erfolgt auf dem Gerät mit dem ihr die Seite besucht, das heißt es werden keine Daten an den Server gesendet.
 
-**Das Passwort wird im Browser gespeichert.**  
+**Das Passwort kann im Browser gespeichert werden.**  
 Damit ist das Passwort vor dem Zugriff anderer Seiten geschützt, kann jedoch bei der Nutzung desselben Geräts durch andere Personen eingesehen werden.
 
 **Kein Tracking**  
